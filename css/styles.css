@@ -3,9 +3,37 @@ body {
 	font-weight: 600;
 }
 
-.title {
-	text-shadow: 1px 2px 3px lightblue;
+.hover-border:hover{
+	border-bottom: 1px whitesmoke;
+}
+
+.titulo {
 	font-style: italic;
-	padding: 12px 10px;
 	font-size: 26px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.hero-background {
+	background: url('../public/background.jpg');
+}
+
+.projects {
+	background-image: linear-gradient(to right, #41d8dd, #5583ee);
+}
+
+.image-card {
+	object-fit: cover;
+}
+
+.is-shadow {
+	text-shadow: 1px 2px 5px ghostwhite;
+}
+
+.has-card-hover, .has-card-hover:hover {
+	transition: 1s;
+}
+.has-card-hover:hover{
+	transform: scale(0.9);
+	box-shadow: 2px 3px 10px black;
 }
