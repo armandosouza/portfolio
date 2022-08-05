@@ -33,9 +33,19 @@ body {
 .has-card-hover, .has-card-hover:hover {
 	transition: 1s;
 }
+
 .has-card-hover:hover{
 	transform: scale(0.9);
 	box-shadow: 2px 3px 10px black;
+}
+
+.has-transition {
+	animation-timing-function: ease-in;
+	animation-duration: 3s;
+}
+
+.is-absolute {
+	position: absolute;
 }
 
 .stack {
@@ -57,16 +67,16 @@ body {
 .foot-banner {
 	display: flex;
 	align-items: center;
-	padding: 0 40px;
+	padding: 0px 40px;
 	border-radius: 25px;
 	box-shadow: 4px 4px 8px black;
 	position: absolute;
-	top: -35px;
-	height: 70px;
+	top: -25px;
+	height: 50px;
 }
 
-#foot-content {
-	display: inline;
-	position: relative;
-	top: 20px;
+.foot-content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 60px;
 }
