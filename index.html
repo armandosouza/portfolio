@@ -6,6 +6,7 @@
 	<meta name="description" content="Armando Souza | Full Stack Developer | HTML, Javascript, React, Node.js">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/continuous-carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
@@ -13,10 +14,10 @@
 	<link rel="icon" type="image/x-icon" href="https://cdn2.iconfinder.com/data/icons/seo-web/512/website-code-512.png">
 </head>
 <body class="has-navbar-fixed-top">
-	<nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+	<navbar class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
 			<a class="navbar-item" href="#">
-				<h1 class="titulo">Armando Souza</h1>
+				<i class="fa-solid fa-laptop-code is-size-4 mr-1"></i><h1 class="titulo">Armando Souza</h1>
 			</a>
 			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBurger">
 		      <span aria-hidden="true"></span>
@@ -27,7 +28,7 @@
 		<div id="navbarBurger" class="navbar-menu">
 			<div class="navbar-start">
 				<div class="navbar-item has-dropdown is-hoverable">
-					<a class="navbar-link">Projetos</a>
+					<a href="#projects" class="navbar-link">Projetos</a>
 					<div class="navbar-dropdown">
 						<a class="navbar-item" href="">Front-end</a>
 						<a class="navbar-item" href="">Back-end</a>
@@ -44,92 +45,193 @@
 				</div>
 			</div>
 		</div>
-	</nav>
-	<section class="hero is-fullheight hero-background">
-		<div class="hero-body">
-			<div class="columns has-text-white is-size-2">
-				<div class="column has-text-weight-light">
-					<p class="is-shadow has-text-weight-medium">Armando Souza</p>
-					<p class="is-size-4 mt-3">Desenvolvedor Web Full Stack Jr | Javascript</p>
-					<hr class="dropdown-divider" />
-					<div class="mt-4 has-text-weight-medium">
-						<a class="button is-primary"><i class="fa-solid fa-laptop-code mr-2"></i>Meus Projetos</a>
-						<a class="button ml-3 is-primary"><i class="fa-solid fa-list-check mr-2"></i>Currículo</a>
-						<a class="button ml-3 is-primary"><i class="fa-solid fa-comment mr-2"></i>Contato</a>
-					</div>
-				</div>
-				<div class="column column-background is-size-3 mt-3">
-					<p>Olá, sou desenvolvedor web full stack júnior movido a desafios. Caso queira entrar em contato comigo, basta clicar em Contato!</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section projects">
-		<h2 class="title is-2 has-text-centered is-shadow">
-			Meus Projetos
-		</h2>
-		<h3 class="subtitle mt-3 is-3 has-text-centered">
-			Confira meus principais projetos abaixo:
-		</h3>
-		<div class="is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-space-around">
-			<div class="card mt-4 has-card-hover is-clickable">
-				<div class="card-image">
-					<figure class="image is-16by9">
-						<img src="https://github.com/armandosouza/burgeria/raw/main/assets/screenshots/3.png" width="320" class="image-card" alt="Projeto Burgeria">
-					</figure>
-				</div>
-				<div class="card-content">
-					<div class="media">
-						<div class="media-content">
-							<p class="title is-4"><i class="fa-solid fa-code mr-2"></i>Projeto Burgeria</p>
-							<p class="subtitle is-6"><i class="fa-solid fa-cubes mr-2"></i>HTML, CSS, Javascript</p>
+	</navbar>
+	<main>
+		<section class="hero is-fullheight hero-background">
+			<div class="hero-body">
+				<div class="columns has-text-white is-size-2">
+					<div class="column has-text-weight-light">
+						<p class="is-shadow has-text-weight-medium">Armando Souza</p>
+						<p class="is-size-4 mt-3">Desenvolvedor Web Full Stack Jr | Javascript</p>
+						<hr class="dropdown-divider" />
+						<div class="mt-4 has-text-weight-medium">
+							<a class="button is-primary"><i class="fa-solid fa-laptop-code mr-2"></i>Meus Projetos</a>
+							<a class="button ml-3 is-primary"><i class="fa-solid fa-list-check mr-2"></i>Currículo</a>
+							<a class="button ml-3 is-primary"><i class="fa-solid fa-comment mr-2"></i>Contato</a>
 						</div>
 					</div>
-				</div>
-				<div class="content mx-5 mb-3">
-					Site responsivo de uma hamburgueria fictícia, feito com HTML, CSS e Javascript.
-				</div>
-			</div>
-			<div class="card mt-4 has-card-hover is-clickable">
-				<div class="card-image">
-					<figure class="image is-16by9">
-						<img src="https://github.com/armandosouza/burgeria/raw/main/assets/screenshots/3.png" width="320" class="image-card" alt="Projeto Burgeria">
-					</figure>
-				</div>
-				<div class="card-content">
-					<div class="media">
-						<div class="media-content">
-							<p class="title is-4"><i class="fa-solid fa-code mr-2"></i>Projeto Burgeria</p>
-							<p class="subtitle is-6"><i class="fa-solid fa-cubes mr-2"></i>HTML, CSS, Javascript</p>
-						</div>
+					<div class="column column-background is-size-3 mt-3">
+						<p>Olá, sou desenvolvedor web full stack júnior movido a desafios. Caso queira entrar em contato comigo, basta clicar em Contato!</p>
 					</div>
 				</div>
-				<div class="content mx-5 mb-3">
-					Site responsivo de uma hamburgueria fictícia, feito com HTML, CSS e Javascript.
-				</div>
 			</div>
-			<div class="card mt-4 has-card-hover is-clickable">
-				<div class="card-image">
-					<figure class="image is-16by9">
-						<img src="https://github.com/armandosouza/burgeria/raw/main/assets/screenshots/3.png" width="320" class="image-card" alt="Projeto Burgeria">
-					</figure>
-				</div>
-				<div class="card-content">
-					<div class="media">
-						<div class="media-content">
-							<p class="title is-4"><i class="fa-solid fa-code mr-2"></i>Projeto Burgeria</p>
-							<p class="subtitle is-6"><i class="fa-solid fa-cubes mr-2"></i>HTML, CSS, Javascript</p>
+		</section>
+		<section id="projects" class="section projects">
+			<h2 class="title is-2 has-text-centered is-shadow">
+				Meus Projetos
+			</h2>
+			<h3 class="subtitle mt-3 is-3 has-text-centered">
+				Confira meus principais projetos abaixo:
+			</h3>
+			<div class="is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-space-around">
+				<div class="card mt-4 has-card-hover is-clickable">
+					<div class="card-image">
+						<figure class="image is-16by9">
+							<img src="https://github.com/armandosouza/burgeria/raw/main/assets/screenshots/3.png" width="320" class="image-card" alt="Projeto Burgeria">
+						</figure>
+					</div>
+					<div class="card-content">
+						<div class="media">
+							<div class="media-content">
+								<p class="title is-4"><i class="fa-solid fa-code mr-2"></i>Projeto Burgeria</p>
+								<p class="subtitle is-6"><i class="fa-solid fa-cubes mr-2"></i>HTML, CSS, Javascript</p>
+							</div>
 						</div>
 					</div>
+					<div class="content mx-5 mb-3">
+						Site responsivo de uma hamburgueria fictícia, feito com HTML, CSS e Javascript.
+					</div>
 				</div>
-				<div class="content mx-5 mb-3">
-					Site responsivo de uma hamburgueria fictícia, feito com HTML, CSS e Javascript.
+				<div class="card mt-4 has-card-hover is-clickable">
+					<div class="card-image">
+						<figure class="image is-16by9">
+							<img src="https://github.com/armandosouza/burgeria/raw/main/assets/screenshots/3.png" width="320" class="image-card" alt="Projeto Burgeria">
+						</figure>
+					</div>
+					<div class="card-content">
+						<div class="media">
+							<div class="media-content">
+								<p class="title is-4"><i class="fa-solid fa-code mr-2"></i>Projeto Burgeria</p>
+								<p class="subtitle is-6"><i class="fa-solid fa-cubes mr-2"></i>HTML, CSS, Javascript</p>
+							</div>
+						</div>
+					</div>
+					<div class="content mx-5 mb-3">
+						Site responsivo de uma hamburgueria fictícia, feito com HTML, CSS e Javascript.
+					</div>
+				</div>
+				<div class="card mt-4 has-card-hover is-clickable">
+					<div class="card-image">
+						<figure class="image is-16by9">
+							<img src="https://github.com/armandosouza/burgeria/raw/main/assets/screenshots/3.png" width="320" class="image-card" alt="Projeto Burgeria">
+						</figure>
+					</div>
+					<div class="card-content">
+						<div class="media">
+							<div class="media-content">
+								<p class="title is-4"><i class="fa-solid fa-code mr-2"></i>Projeto Burgeria</p>
+								<p class="subtitle is-6"><i class="fa-solid fa-cubes mr-2"></i>HTML, CSS, Javascript</p>
+							</div>
+						</div>
+					</div>
+					<div class="content mx-5 mb-3">
+						Site responsivo de uma hamburgueria fictícia, feito com HTML, CSS e Javascript.
+					</div>
 				</div>
 			</div>
+			<div class="is-flex is-justify-content-center mt-5">
+				<a class="button is-link is-medium has-card-hover has-text-white has-text-weight-medium">Conferir mais projetos</a>
+			</div>
+		</section>
+		<section class="section stack">
+			<h2 class="title is-2 has-text-centered has-text-white is-shadow">
+				Conhecimentos
+			</h2>
+			<h3 class="subtitle mt-4 is-3 has-text-centered has-text-white">
+				Algumas das tecnologias que tenho domínio ou algum nível de conhecimento:
+			</h3>
+			<div class="container mt-4">
+				<div id="slider" class="c-carousel-container my-5" data-direction="horizontal" data-num-visible="1">
+					<ul class="c-carousel-group has-text-white">
+						<li class="c-carousel-item has-text-centered">
+							<figure>
+								<img src="https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png" alt="HTML5">
+								<figcaption>HTML5</figcaption>
+							</figure>
+						</li>
+						<li class="c-carousel-item has-text-centered">
+							<figure>
+								<img src="https://logospng.org/download/css-3/logo-css-3-2048.png" alt="CSS3">
+								<figcaption>CSS3</figcaption>
+							</figure>
+						</li>
+						<li class="c-carousel-item has-text-centered">
+							<figure>
+								<img src="https://logospng.org/download/javascript/logo-javascript-1024.png" alt="Javascript">
+								<figcaption>Javascript</figcaption>
+							</figure>
+						</li>
+						<li class="c-carousel-item has-text-centered">
+							<figure>
+								<img src="https://miro.medium.com/max/512/0*FwSqmsGzAFKGRexY.png" alt="React">
+								<figcaption>React</figcaption>
+							</figure>
+						</li>
+						<li class="c-carousel-item has-text-centered">
+							<figure>
+								<img src="https://www.daggala.com/static/228867c3668e439101821568a8a03b54/19ca5/sc.png" alt="Styled Components">
+								<figcaption>Styled Components</figcaption>
+							</figure>
+						</li>
+						<li class="c-carousel-item has-text-centered">
+							<figure>
+								<img src="https://img.icons8.com/color/480/bootstrap.png" alt="Bootstrap">
+								<figcaption>Bootstrap</figcaption>
+							</figure>
+						</li>
+						<li class="c-carousel-item has-text-centered">
+							<figure>
+								<img src="https://raw.githubusercontent.com/github/explore/ad9cd7e959a88047c830c3a9cc4e9ffcf5e644f7/topics/bulma/bulma.png" alt="Bulma">
+								<figcaption>Bulma</figcaption>
+							</figure>
+						</li>
+						<li class="c-carousel-item has-text-centered">
+							<figure>
+								<img src="https://img.icons8.com/color/480/nodejs.png" alt="Node">
+								<figcaption>Node.js</figcaption>
+							</figure>
+						</li>
+						<li class="c-carousel-item has-text-centered">
+							<figure>
+								<img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png" alt="Express">
+								<figcaption>Express</figcaption>
+							</figure>
+						</li>
+						<li class="c-carousel-item has-text-centered">
+							<figure>
+								<img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-5-1175140.png" alt="MongoDB">
+								<figcaption>MongoDB</figcaption>
+							</figure>
+						</li>
+						<li class="c-carousel-item has-text-centered">
+							<figure>
+								<img src="https://cdn-icons-png.flaticon.com/512/5968/5968313.png" alt="MySQL">
+								<figcaption>MySQL</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="py-5 has-background-link is-size-4 foot">
+		<div class="foot-banner container has-background-danger">
+			<h2 class="title is-4 has-text-weight-medium has-text-white-bis">Não hesite em me contatar!</h2>
 		</div>
-		<div class="container">
-			<a class="button is-primary is-rounded"></a>
+		<div class="mx-3" id="foot-content">
+			<a class="title is-2">Armando Souza</a>
+			<nav class="foot-social">
+				<ul class="is-flex is-flex-direction-row ">
+					<li><img src="https://cdn.icon-icons.com/icons2/2368/PNG/512/github_logo_icon_143772.png" width="50"></li>
+					<li><img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/linkedin_logo_icon_147268.png" width="50"></li>
+					<li><img src="https://homeoffice.com.br/wp-content/uploads/2020/06/e-mail-icon.png" width="50"></li>
+				</ul>
+			</nav>
 		</div>
-	</section>
+	</footer>
+
+	<script src="./js/continuous-carousel.min.js"></script>
+	<script src="./js/carousel.js"></script>
+	<script src="./js/menuburger.js"></script>
 </body>
 </html>

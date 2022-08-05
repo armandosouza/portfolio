@@ -37,3 +37,36 @@ body {
 	transform: scale(0.9);
 	box-shadow: 2px 3px 10px black;
 }
+
+.stack {
+	background: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700326851.jpg') no-repeat;
+	background-size: cover;
+	opacity: 0.9;
+}
+
+.c-carousel-item img {
+	height: 200px;
+}
+
+.foot {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.foot-banner {
+	display: flex;
+	align-items: center;
+	padding: 0 40px;
+	border-radius: 25px;
+	box-shadow: 4px 4px 8px black;
+	position: absolute;
+	top: -35px;
+	height: 70px;
+}
+
+#foot-content {
+	display: inline;
+	position: relative;
+	top: 20px;
+}
