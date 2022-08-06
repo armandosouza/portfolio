@@ -80,3 +80,17 @@ body {
 	justify-content: space-between;
 	margin-top: 60px;
 }
+
+.resume {
+	background: url('https://www.wallpaperflare.com/static/778/50/470/line-shadow-background-dark-wallpaper.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.profile-photo {
+	border-radius: 50%;
+}
+
+.has-line-height {
+	line-height: 30px;
+}

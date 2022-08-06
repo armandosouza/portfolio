@@ -6,7 +6,7 @@ navbarBurger.addEventListener('click', () => {
 	navbarMenu.classList.toggle('is-active')
 })
 
-//Tooltips - Footer
+//Add tooltips on footer
 const socialFooter = document.getElementsByClassName('foot-social')[0]
 const itemSocial = socialFooter.children[0].children
 for(let i = 0; i < itemSocial.length; i++) {
