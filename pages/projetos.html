@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Armando Souza | Full Stack Developer | HTML, Javascript, React, Node.js">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+	<title>Armando Souza | Projetos</title>
+	<link rel="icon" type="image/x-icon" href="https://cdn2.iconfinder.com/data/icons/seo-web/512/website-code-512.png">
+</head>
+<body>
+	<navbar class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="../index.html">
+				<i class="fa-solid fa-laptop-code is-size-4 mr-1"></i><h1 class="titulo">Armando Souza</h1>
+			</a>
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBurger">
+		      <span aria-hidden="true"></span>
+		      <span aria-hidden="true"></span>
+		      <span aria-hidden="true"></span>
+		    </a>
+		</div>
+		<div id="navbarBurger" class="navbar-menu">
+			<div class="navbar-start">
+				<div class="navbar-item has-dropdown is-hoverable">
+					<a href="#" class="navbar-link has-background-primary">Projetos</a>
+					<div class="navbar-dropdown">
+						<a class="navbar-item" href="#front">Front-end</a>
+						<a class="navbar-item" href="#back">Back-end</a>
+						<a class="navbar-item" href="#full">Full Stack</a>
+					</div>
+				</div>
+				<a href="./curriculo.html" class="navbar-item">Currículo</a>
+				<a href="./curriculo.html#educacao" class="navbar-item">Educação</a>
+				<a href="./curriculo.html#about" class="navbar-item">Sobre</a>
+			</div>
+			<div class="navbar-end">
+				<div class="navbar-item">
+					<a href="#contact" class="button is-primary is-rounded">Entrar em contato</a>
+				</div>
+			</div>
+		</div>
+	</navbar>
+	<main class="projects-page">
+		<section class="section has-text-centered">
+			<h1 class="title is-2 mt-3 has-text-centered has-text-white">Projetos</h1>
+			<h2 class="subtitle is-3 mt-2 has-text-centered has-text-white">Acesse meus principais projetos listados abaixo:</h2>
+			<div class="field my-3 columns">
+				<div class="column is-three-quarters">
+					<label class="label has-text-white">Nome do projeto:</label>
+					<div class="control has-icons-left">
+	    				<input id="project-search" class="input" type="text" placeholder="Digite o nome do projeto..." onchange="searchProjectByName()">
+	    				<span class="icon is-small is-left is-clickable">
+	    					<i class="fa-solid fa-search"></i>
+	    				</span>
+	  				</div>
+  				</div>
+  				<div class="column">
+  					<label class="label has-text-white">Tipo de projeto:</label>
+					<div class="control">
+						<div id="project-type" class="select">
+							<select onchange="searchProjectBySelect()">
+								<option value="">Todos</option>
+								<option value="back">Back-end</option>
+								<option value="front">Front-end</option>
+								<option value="full">Full Stack</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="listprojects" class="is-flex is-justify-content-space-around is-flex-wrap-wrap mx-5">
+			</div>
+		</section>
+	</main>
+	<footer class="has-background-link is-size-4" id="contact">
+		<div class="foot">
+			<div class="foot-banner container has-background-danger">
+				<h2 class="title is-4 is-size-6-mobile has-text-weight-medium has-text-white-bis">Não hesite em me contatar!</h2>
+			</div>
+		</div>
+		<div class="mx-5 foot-content">
+			<a class="title is-3 is-size-4-mobile has-text-white ml-3" href="../index.html"><i class="fa-solid fa-laptop-code mr-2"></i>Armando Souza</a>
+			<nav class="foot-social mr-5">
+				<ul class="is-flex is-flex-direction-row ">
+					<li class="mx-1 has-text-centered">
+						<a href="https://github.com/armandosouza"><img src="https://cdn.icon-icons.com/icons2/2368/PNG/512/github_logo_icon_143772.png" width="40"></a>
+						<p class="is-size-7 p-1 message is-hidden is-absolute has-transition">Github</p>
+					</li>
+					<li class="mx-1 has-text-centered">
+						<a href="https://linkedin.com/in/armandobssouza"><img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/linkedin_logo_icon_147268.png" width="40"></a>
+						<p class="is-size-7 p-1 message is-hidden is-absolute has-transition">Linkedin</p>
+					</li>
+					<li class="mx-1 has-text-centered">
+						<a href="mailto://armandobssouza@hotmail.com"><img src="https://woir.in/wp-content/uploads/2017/03/free-mail-icon-1008-thumb.png" width="40"></a>
+						<p class="is-size-7 p-1 message is-hidden is-absolute has-transition">E-mail</p>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="foot-menu mt-5">
+			<nav class="is-size-5 is-size-6-mobile has-text-weight-medium is-uppercase pb-3">
+				<ul class="is-flex is-flex-direction-row is-justify-content-space-around">
+					<li><a href="#" class="has-text-light">Início</a></li>
+					<li><a href="#" class="has-text-light">Projetos</a></li>
+					<li><a href="./pages/curriculo.html" class="has-text-light">Currículo</a></li>
+					<li><a href="./pages/curriculo.html#about" class="has-text-light">Sobre</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="../js/animate.js"></script>
+	<script src="../js/listprojects.js"></script>
+</body>
+</html>

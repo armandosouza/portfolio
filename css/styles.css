@@ -94,3 +94,25 @@ body {
 .has-line-height {
 	line-height: 30px;
 }
+
+.projects-page {
+	background: url("https://static.vecteezy.com/system/resources/previews/004/979/193/original/hexagon-abstract-green-neon-background-free-vector.jpg");
+	object-fit: cover;
+	background-repeat: repeat-y;
+}
+
+.project-card {
+	background: white;
+	border-radius: 10px;
+	width: 520px;
+}
+
+.project-card-image figure img {
+	width: inherit;
+	border-bottom: 1px solid grey;
+	border-radius: 10px;
+}
+
+.project-card-content {
+	padding: 3px 12px;
+}
