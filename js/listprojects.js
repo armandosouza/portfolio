@@ -13,6 +13,14 @@ var projects = [{
 		"image": "https://raw.githubusercontent.com/armandosouza/finans-bootstrap/main/screenshot.png",
 		"link": "https://armandosouza.epizy.com/finans",
 		"type": "front"
+	},
+	{
+		"name": "Todo App",
+		"desc": "App de lista de tarefas feito em React",
+		"stack": "React",
+		"image": "../screenshot.png",
+		"link": "https://todo-react-lime.vercel.app/",
+		"type": "front"
 	}]
 
 const listProjects = document.getElementById('listprojects')
