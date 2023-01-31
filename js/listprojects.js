@@ -21,6 +21,14 @@ var projects = [{
 		"image": "../screenshot.png",
 		"link": "https://todo-react-lime.vercel.app/",
 		"type": "front"
+	},
+	{
+		"name": "Next University",
+		"desc": "Projeto full stack de universidade com plataforma de cursos",
+		"stack": "MERN (MongoDB, Express, React, Node.js)",
+		"image": "https://github.com/armandosouza/universidade-next/blob/main/2.jpg",
+		"link": "https://universidade-next.vercel.app/",
+		"type": "full"
 	}]
 
 const listProjects = document.getElementById('listprojects')
