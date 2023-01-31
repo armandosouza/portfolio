@@ -26,7 +26,7 @@ var projects = [{
 		"name": "Next University",
 		"desc": "Projeto full stack de universidade com plataforma de cursos",
 		"stack": "MERN (MongoDB, Express, React, Node.js)",
-		"image": "https://github.com/armandosouza/universidade-next/blob/main/2.jpg",
+		"image": "../public/university.jpg",
 		"link": "https://universidade-next.vercel.app/",
 		"type": "full"
 	}]
